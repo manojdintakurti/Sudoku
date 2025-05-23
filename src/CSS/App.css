@@ -1,0 +1,47 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f7fafc;
+    color: #1a202c;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container.dark {
+    background-color: #1a202c;
+    color: white;
+}
+
+.inner-container {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main-layout {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.timer-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

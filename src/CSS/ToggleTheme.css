@@ -1,0 +1,32 @@
+.theme-toggle-button {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: #f3f4f6; /* gray-100 */
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-toggle-button:hover {
+    background-color: #e5e7eb; /* gray-200 */
+}
+
+.dark .theme-toggle-button {
+    background-color: #1f2937; /* gray-800 */
+}
+
+.dark .theme-toggle-button:hover {
+    background-color: #374151; /* gray-700 */
+}
+
+.icon-light {
+    color: #1f2937; /* gray-800 */
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.icon-dark {
+    color: #e5e7eb; /* gray-200 */
+    width: 1.25rem;
+    height: 1.25rem;
+}
